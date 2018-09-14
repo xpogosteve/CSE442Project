@@ -6,3 +6,5 @@ Steven Bennett
 Cesidio Lucente
 
 Ethan Sachse
+
+Jared Miller
