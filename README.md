@@ -1,5 +1,5 @@
 # Virtual Barstool
-Project for Software Engineering. Update with more info later
+Project for Software Engineering. Will be updated with more info later
 
 Steven Bennett
 
