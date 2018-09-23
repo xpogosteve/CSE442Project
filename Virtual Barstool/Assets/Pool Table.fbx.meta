@@ -13,7 +13,7 @@ ModelImporter:
     2100010: PoolTable_Leather1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: PoolTable:Mesh
+    4300000: PoolTable1
   externalObjects: {}
   materials:
     importMaterials: 1
