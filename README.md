@@ -1,4 +1,6 @@
 # Virtual Barstool
+Project for Software Engineering. Will be updated with more info later
+
 
 Cesidio Lucente cesidiol@buffalo.edu  
 Steven Bennett sjbennet@buffalo.edu  
