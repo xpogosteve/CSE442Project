@@ -20,7 +20,7 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
-storage.ide*
+*.vs
 
 # ============ #
 # OS generated #
