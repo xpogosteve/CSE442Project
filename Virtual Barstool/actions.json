@@ -28,7 +28,8 @@
     {
       "name": "/actions/default/in/SkeletonRightHand",
       "type": "skeleton",
-      "skeleton": "/skeleton/hand/right"
+      "skeleton": "/skeleton/hand/right",
+      "requirement": "optional"
     },
     {
       "name": "/actions/default/in/Squeeze",
