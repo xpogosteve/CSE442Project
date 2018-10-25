@@ -21,6 +21,7 @@ namespace Valve.VR.InteractionSystem
 		void Awake()
 		{
 			capsuleCollider = GetComponent<CapsuleCollider>();
+            bool triggered = capsuleCollider.isTrigger;
 		}
 
 
