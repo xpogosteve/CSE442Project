@@ -213,6 +213,7 @@ MonoBehaviour:
   handFollowTransformRotation: 1
   highlightOnHover: 1
   hideHighlight: []
+  PoolCue: {fileID: 0}
 --- !u!114 &114000011677327570
 MonoBehaviour:
   m_ObjectHideFlags: 1

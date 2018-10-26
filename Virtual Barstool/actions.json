@@ -63,6 +63,10 @@
     {
       "name": "/actions/buggy/in/Reset",
       "type": "boolean"
+    },
+    {
+      "name": "/actions/Pool_Cue/in/NewAction",
+      "type": "boolean"
     }
   ],
   "action_sets": [
@@ -76,6 +80,10 @@
     },
     {
       "name": "/actions/buggy",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/Pool_Cue",
       "usage": "single"
     }
   ],

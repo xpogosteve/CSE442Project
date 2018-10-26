@@ -70,14 +70,19 @@ namespace Valve.VR.InteractionSystem
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
+        public TestTwoHands PoolCue;
+
         private void Start()
         {
+            PoolCue = GetComponent<TestTwoHands>();
+
             highlightMat = (Material)Resources.Load("SteamVR_HoverHighlight", typeof(Material));
 
             if (highlightMat == null)
                 Debug.LogError("Hover Highlight Material is missing. Please create a material named 'SteamVR_HoverHighlight' and place it in a Resources folder");
             
         }
+
 
         private bool ShouldIgnoreHighlight(Component component)
         {
@@ -241,8 +246,14 @@ namespace Valve.VR.InteractionSystem
 			{
 				onAttachedToHand.Invoke( hand );
 			}
-
             attachedToHand = hand;
+
+            if (PoolCue != null)
+            {
+                PoolCue.enabled = true;
+            }
+
+
         }
 
 		private void OnDetachedFromHand( Hand hand )
@@ -262,7 +273,12 @@ namespace Valve.VR.InteractionSystem
 			}
 
             attachedToHand = null;
-		}
+
+            if (PoolCue != null)
+            {
+                PoolCue.enabled = false;
+            }
+        }
 
         protected virtual void OnDestroy()
         {

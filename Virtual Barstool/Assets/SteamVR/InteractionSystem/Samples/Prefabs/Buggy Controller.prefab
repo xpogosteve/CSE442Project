@@ -1103,6 +1103,7 @@ MonoBehaviour:
   handFollowTransformRotation: 1
   highlightOnHover: 1
   hideHighlight: []
+  PoolCue: {fileID: 0}
 --- !u!222 &222180928245928248
 CanvasRenderer:
   m_ObjectHideFlags: 1

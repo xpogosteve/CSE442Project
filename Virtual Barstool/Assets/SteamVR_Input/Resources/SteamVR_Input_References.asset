@@ -15,10 +15,12 @@ MonoBehaviour:
   - _default
   - platformer
   - buggy
+  - Pool_Cue
   actionSetObjects:
   - {fileID: 11400000, guid: f106bd29e056e3a4f9d694ae2a2f696c, type: 2}
   - {fileID: 11400000, guid: b29d7af3dca4d054f99e06ad9481eb94, type: 2}
   - {fileID: 11400000, guid: d3904756c575abf458558cccf3231bae, type: 2}
+  - {fileID: 11400000, guid: d3f2f000624b7e84a8f2ab96cd9b1530, type: 2}
   actionNames:
   - __actions_default_in_InteractUI
   - __actions_default_in_Teleport
@@ -35,6 +37,7 @@ MonoBehaviour:
   - __actions_buggy_in_Throttle
   - __actions_buggy_in_Brake
   - __actions_buggy_in_Reset
+  - __actions_Pool_Cue_in_NewAction
   actionObjects:
   - {fileID: 11400000, guid: a1bd01942544dc34c8f74633c633630c, type: 2}
   - {fileID: 11400000, guid: 7c3795b62e1781642b5c0de28cf0267e, type: 2}
@@ -51,3 +54,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6d51b974a7d410d468561cd359b91d04, type: 2}
   - {fileID: 11400000, guid: dcfdef53c54ae5140a5d31a122a422b7, type: 2}
   - {fileID: 11400000, guid: c51a899785f8a6c44b40743af64ea62d, type: 2}
+  - {fileID: 11400000, guid: 354c042dadae7724881e7c4686674b62, type: 2}
