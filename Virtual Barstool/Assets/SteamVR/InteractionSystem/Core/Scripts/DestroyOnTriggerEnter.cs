@@ -19,19 +19,26 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void Start()
 		{
-			if ( !string.IsNullOrEmpty( tagFilter ) )
+            Debug.Log(tagFilter);
+            
+            if ( !string.IsNullOrEmpty( tagFilter ) )
 			{
 				useTag = true;
-			}
+                
+            }
+            
 		}
 
 
 		//-------------------------------------------------
 		void OnTriggerEnter( Collider collider )
 		{
-			if ( !useTag || ( useTag && collider.gameObject.tag == tagFilter ) )
+			if (collider.gameObject.tag == "ball_13_stripe") 
 			{
-				Destroy( collider.gameObject.transform.root.gameObject );
+                Debug.Log(collider.gameObject.tag);
+                Debug.Log(collider.gameObject.transform.root.gameObject);
+
+                Destroy( collider.gameObject.transform.root.gameObject );
 			}
 		}
 	}
