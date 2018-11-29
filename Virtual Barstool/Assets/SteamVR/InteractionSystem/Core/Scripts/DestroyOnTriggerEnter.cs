@@ -33,7 +33,12 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void OnTriggerEnter( Collider collider )
 		{
-			if (collider.gameObject.name.Contains("ball")) 
+           /* if (collider.gameObject.name.Contains("white"))
+            {
+                return;
+            }*/
+
+            if (collider.gameObject.name.Contains("ball")) 
 			{
                 //Debug.Log(collider.gameObject.tag);
                 //Debug.Log(collider.gameObject.transform.root.gameObject);

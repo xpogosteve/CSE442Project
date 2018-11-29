@@ -16,13 +16,15 @@ public class Ball_Log : MonoBehaviour {
     int stripecount = 7;
     int solidcount = 8;
     string winner="No body";
+    Vector3 ct = new Vector3(0, 0, 0);
 
 
     // Use this for initialization
     void Start () {
-        
-		
-	}
+        ct = cueball.transform.position;
+
+
+    }
 	
 	// Update is called once per frame
 
@@ -74,9 +76,9 @@ public class Ball_Log : MonoBehaviour {
                 }
 
                 }
-                else//if cueball
+                else if(t.Contains("white")) //if cueball
                 {
-                 Instantiate(cueball, Vector3.zero, transform.rotation);
+                 Instantiate(cueball, ct, transform.rotation);
                 }
             //Debug.Log(Menu.GetComponent<Text>());
             Menu.GetComponent<Text>().text = "Solids: " + solidcount + "\n Stripes: " + stripecount;
