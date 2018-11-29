@@ -33,13 +33,14 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void OnTriggerEnter( Collider collider )
 		{
-			if (collider.gameObject.tag == "ball_13_stripe") 
+			if (collider.gameObject.name.Contains("ball")) 
 			{
-                Debug.Log(collider.gameObject.tag);
-                Debug.Log(collider.gameObject.transform.root.gameObject);
+                //Debug.Log(collider.gameObject.tag);
+                //Debug.Log(collider.gameObject.transform.root.gameObject);
 
-                Destroy( collider.gameObject.transform.root.gameObject );
-			}
+                //Destroy( collider.gameObject.transform.root.gameObject );
+                Destroy(collider.gameObject);
+            }
 		}
 	}
 }

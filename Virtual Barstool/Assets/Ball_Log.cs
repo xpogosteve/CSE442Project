@@ -76,7 +76,7 @@ public class Ball_Log : MonoBehaviour {
                 }
                 else//if cueball
                 {
-               Instantiate(cueball, Vector3.zero, transform.rotation);
+                 Instantiate(cueball, Vector3.zero, transform.rotation);
                 }
             //Debug.Log(Menu.GetComponent<Text>());
             Menu.GetComponent<Text>().text = "Solids: " + solidcount + "\n Stripes: " + stripecount;
