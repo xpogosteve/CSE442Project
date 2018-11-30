@@ -8,14 +8,14 @@ namespace Valve.VR.InteractionSystem
 {
     public class OptionsMenuHandler : MonoBehaviour
     {
-        public string gameScene;
+        public string gameSceneLocation;
         public void ExitGame()
         {
             Application.Quit();
         }
         public void ResumeGame()
         {
-            SceneManager.LoadScene(gameScene);
+            SceneManager.LoadScene(gameSceneLocation);
         }
     }
 }
