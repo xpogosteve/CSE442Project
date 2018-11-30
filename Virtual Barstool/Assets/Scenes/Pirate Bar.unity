@@ -7813,6 +7813,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4060644172297262, guid: 5e5ff3f0c335b83438b02a4f1020a3cc,
     type: 2}
   m_PrefabInternal: {fileID: 1563137538}
+--- !u!1 &1575272349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1629659277093920, guid: 8299ee55db700464da3bc698917d891c,
+    type: 2}
+  m_PrefabInternal: {fileID: 858111522}
 --- !u!1001 &1599018650
 Prefab:
   m_ObjectHideFlags: 0
@@ -8114,7 +8119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Menu: {fileID: 1758657770}
   balls: {fileID: 1975721134}
-  cueball: {fileID: 1809392742}
+  cueball: {fileID: 1575272349}
 --- !u!114 &1634621910
 MonoBehaviour:
   m_ObjectHideFlags: 0

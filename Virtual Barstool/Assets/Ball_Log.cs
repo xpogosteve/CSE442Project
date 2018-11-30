@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Ball_Log : MonoBehaviour {
@@ -89,6 +90,19 @@ public class Ball_Log : MonoBehaviour {
 
     void Gameover(string winner)
     {
+        Menu.GetComponent<Text>().text = winner;
+        new WaitForSeconds(5);
+        Menu.GetComponent<Text>().text = "Resetting in: ";
+        for(int x=5; x>0; x--)
+        {
+            Menu.GetComponent<Text>().text = "Resetting in: " + x;
+            new WaitForSeconds(1);
+
+        }
+
+
+        SceneManager.LoadScene("Pirate Bar");
+
 
 
     }
