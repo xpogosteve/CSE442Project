@@ -13,7 +13,7 @@ namespace Valve.VR.InteractionSystem
         {
             Application.Quit();
         }
-        public void ResumeGame()
+        public void StartGame()
         {
             SceneManager.LoadScene(gameSceneLocation);
         }
