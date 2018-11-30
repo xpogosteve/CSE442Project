@@ -11,7 +11,10 @@ namespace Valve.VR.InteractionSystem
     {
         public string gameSceneLocation;
         public Text txt;
+        public string menuSceneLocation;
         private int vol = 100;
+        
+
         public void Start()
         {
             txt.text = vol.ToString();
@@ -41,6 +44,10 @@ namespace Valve.VR.InteractionSystem
                 txt.text = vol.ToString();
                 AudioListener.volume = vol;
             }
+        }
+        public void GoToMainMenu()
+        {
+            SceneManager.LoadScene(menuSceneLocation);
         }
     }
 }
