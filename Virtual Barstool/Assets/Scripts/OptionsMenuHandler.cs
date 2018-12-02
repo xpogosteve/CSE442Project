@@ -31,7 +31,7 @@ namespace Valve.VR.InteractionSystem
         {
             if (vol < 100)
             {
-                vol++;
+                vol+=10;
                 txt.text = vol.ToString();
                 AudioListener.volume = vol;
             } 
@@ -40,7 +40,7 @@ namespace Valve.VR.InteractionSystem
         {
             if (vol > 0)
             {
-                vol--;
+                vol-=10;
                 txt.text = vol.ToString();
                 AudioListener.volume = vol;
             }
@@ -48,6 +48,14 @@ namespace Valve.VR.InteractionSystem
         public void GoToMainMenu()
         {
             SceneManager.LoadScene(menuSceneLocation);
+        }
+        public void Pause ()
+        {
+            Time.timeScale = 0;
+        }
+        public void Resume ()
+        {
+            Time.timeScale = 1;
         }
     }
 }
