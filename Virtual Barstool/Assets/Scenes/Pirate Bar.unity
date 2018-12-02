@@ -8741,11 +8741,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4877270591522666, guid: a5f645b443bb9004ca995d6ccf0970ec, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4877270591522666, guid: a5f645b443bb9004ca995d6ccf0970ec, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4731640710232642, guid: a5f645b443bb9004ca995d6ccf0970ec, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
