@@ -7,25 +7,16 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Valve.VR.InteractionSystem
-{
-	//-------------------------------------------------------------------------
-	public class DestroyOnTriggerEnter : MonoBehaviour
-	{
-		public string tagFilter;
 
-		private bool useTag;
+	//-------------------------------------------------------------------------
+	public class BallDestroyer : MonoBehaviour
+	{
+		
 
 		//-------------------------------------------------
 		void Start()
 		{
-            Debug.Log(tagFilter);
-            
-            if ( !string.IsNullOrEmpty( tagFilter ) )
-			{
-				useTag = true;
-                
-            }
+           
             
 		}
 
@@ -48,4 +39,4 @@ namespace Valve.VR.InteractionSystem
             }
 		}
 	}
-}
+
