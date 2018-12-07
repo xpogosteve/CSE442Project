@@ -41,7 +41,7 @@ namespace Valve.VR.InteractionSystem.Sample
 		//-------------------------------------------------
 		public void DisableHints()
 		{
-			if ( buttonHintCoroutine != null )
+            /*if ( buttonHintCoroutine != null )
 			{
 				StopCoroutine( buttonHintCoroutine );
 				buttonHintCoroutine = null;
@@ -57,7 +57,8 @@ namespace Valve.VR.InteractionSystem.Sample
 			{
 				ControllerButtonHints.HideAllButtonHints( hand );
 				ControllerButtonHints.HideAllTextHints( hand );
-			}
+			}*/
+            Application.Quit();
 		}
 
 
